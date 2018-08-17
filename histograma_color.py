@@ -13,7 +13,7 @@ plt.axis("off")
 plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 plt.show()
 
-color = ('r','g','b')
+color = ('b','g','r')
 for i, col in enumerate(color):
   histr = cv2.calcHist([img], [i], None, [256], [0,256])
   plt.plot(histr,color = col)
